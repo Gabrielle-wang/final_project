@@ -1,0 +1,14 @@
+
+SELECT
+    ZILLOW.zip AS ZipCode,
+    ROUND(AVG(CASE WHEN ZILLOW."2023-08" IS NOT NULL THEN ZILLOW."2023-08" END)::numeric, 2) AS AverageRent
+FROM
+    ZILLOW
+JOIN
+    TREE ON ZILLOW.zip = TREE.zip
+GROUP BY
+    ZILLOW.zip
+ORDER BY
+    COUNT(TREE.tree_id) DESC
+LIMIT
+    10;
