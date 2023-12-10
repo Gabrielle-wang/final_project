@@ -273,7 +273,9 @@ Here are the results of our queries and you can also find them in the notebook,
 <h2 id="h2_2_4">Part 4</h2>
 The part 4 is visualizing data.
 For this part, we create a bunch of visualizations embedded in the notebook using matplotlib and seaborn visualization libraries.
+
 There are 6 visualizations in this part.
+
 Visualization 1: explore the question "What can I expect to put up with in NYC?"
 
 Visualization 2: show the most common complaints in the immediate area.
