@@ -1,7 +1,6 @@
 
 CREATE TABLE IF NOT EXISTS ZIPCODE (
             zip INTEGER PRIMARY KEY,
-            county VARCHAR(255),
             geometry geometry(POLYGON, 4326)
 );
 
@@ -10,9 +9,7 @@ CREATE TABLE IF NOT EXISTS NYC311 (
             zip INTEGER,
             date DATE,
             type VARCHAR(255),
-            borough VARCHAR(255),
             geometry geometry(POINT, 4326),
-            community VARCHAR(255),
             latitude FLOAT,
             longitude FLOAT,
             FOREIGN KEY(zip) REFERENCES ZIPCODE(zip)
@@ -27,7 +24,6 @@ CREATE TABLE IF NOT EXISTS TREE (
             health VARCHAR(255),
             spc_latin VARCHAR(255),
             spc_common VARCHAR(255),
-            boroname VARCHAR(255),
             latitude FLOAT,
             longitude FLOAT,
             FOREIGN KEY(zip) REFERENCES ZIPCODE(zip)
@@ -36,7 +32,6 @@ CREATE TABLE IF NOT EXISTS TREE (
 CREATE TABLE IF NOT EXISTS ZILLOW (
             regionid INTEGER PRIMARY KEY,
             zip INTEGER,
-            county VARCHAR(255),
             FOREIGN KEY(zip) REFERENCES ZIPCODE(zip),
             "2015-01" FLOAT,
             "2015-02" FLOAT,
