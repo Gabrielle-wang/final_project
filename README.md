@@ -1,6 +1,6 @@
 <div style='position:relative'>
-    <span style='position:absolute; left:0;'>Student Name: <b>Kristine Cheng (yc4352)</b><br><br>
-                                             Accomplished Date: 4/12/2023</span>
+    <span style='position:absolute; left:0;'>Student Name: <b>Kristine Cheng (yc4352) Xiaochen Wang(xw2956)</b><br><br>
+                                             Accomplished Date: 10/12/2023</span>
     <span style='position:absolute; left:70%;'>
         <img style="width:400px; height:60px;" src="https://z1.ax1x.com/2023/12/05/pi63QFs.png" 
              alt="IEOR_LOGO.png" title="IEOR_LOGO.png" />
@@ -271,3 +271,18 @@ Here are the results of our queries and you can also find them in the notebook,
 |4|	129234|	red maple|	Good|	Alive|	POINT(-73.74799966 40.71194692)|
 
 <h2 id="h2_2_4">Part 4</h2>
+The part 4 is visualizing data.
+For this part, we create a bunch of visualizations embedded in the notebook using matplotlib and seaborn visualization libraries.
+There are 6 visualizations in this part.
+Visualization 1: explore the question "What can I expect to put up with in NYC?"
+
+Visualization 2: show the most common complaints in the immediate area.
+
+Visualization 3: explore if there exists any correlation between rent, trees, and complaints.
+
+Visualization 4: explore the relationship between rent & complaints.
+
+Visualization 5: explore the places where the recent 311 incidents were reported from in the immediate area.
+
+Visualization 6: explore whether areas are trying to improve the amount of trees in the neighborhood.
+
